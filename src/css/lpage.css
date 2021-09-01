@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Sora&display=swap");
+
+:root {
+  --clr-light: #7b7b8f;
+  --clr-dark: #2b2b33;
+  --fnt-light: #fff;
+  --spl-clr: #6746ed;
+  --spl2-clr: rgba(255, 255, 255, 0.65);
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: url("./../img/Curve Line.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* display: flex;
+  flex-direction: column; */
+
+  color: var(--clr-light);
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Sora", sans-serif;
+  color: var(--fnt-light);
+}
+
+h1 {
+  color: var(--clr-light);
+  font-size: clamp(48px, 10vw, 79px);
+  align-self: center;
+}
+
+h2 {
+  font-size: clamp(44px, 8vw, 69px);
+  margin: 0.65em 0;
+}
+
+h3 {
+  font-size: clamp(28px, 8vw, 39px);
+}
+
+h4 {
+  font-size: clamp(22px, 8vw, 26px);
+}
+
+h5 {
+  font-size: clamp(15px, 8vw, 17px);
+  color: var(--clr-light);
+}
+
+p {
+  color: var(--clr-light);
+  font-size: clamp(15px, 5vw, 24px);
+
+  line-height: 38px;
+}
+
+.btn {
+  font-family: "Sora", sans-serif;
+  border-radius: 50px;
+  border: none;
+  background: none;
+  color: var(--fnt-light);
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.2s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*=======================================Start Header=====================*/
+
+header {
+  height: 100vh;
+}
+
+header .container {
+  display: grid;
+  grid-template:
+    "span" 0.5fr
+    "title" 0.2fr
+    "hyper" auto
+    "txt" auto
+    "btn" auto
+    "scroll" auto;
+}
+
+header h5 {
+  color: var(--fnt-light);
+}
+
+header h1,
+header h5,
+header p,
+header button {
+  text-align: center;
+}
+
+header .btn {
+  border: 2px solid var(--fnt-light);
+  padding: 20px;
+  width: 250px;
+  justify-self: center;
+}
+
+header .btn:hover {
+  background: var(--fnt-light);
+  color: var(--clr-dark);
+}
+
+.scroll-btn {
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+header span {
+  grid-row: 1;
+}
+/*=======================================End Header=====================*/
+
+/*=======================================Start Features=====================*/
+
+.features main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 80px;
+  margin: 70px 0 0 0;
+}
+
+.features .ftur {
+  --width: 70px;
+  display: flex;
+  background: var(--clr-dark);
+  width: var(--width);
+  height: var(--width);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  border-radius: 12px;
+  color: var(--spl2-clr);
+}
+
+/*=======================================End Features=====================*/
+
+/*=======================================Start Mechanism=====================*/
+
+.mecha,
+.pricing,
+.footer {
+  margin-top: 120px;
+}
+
+.mecha main {
+  max-width: 1000px;
+  padding: 15px;
+  margin: 50px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 90px;
+}
+
+.mecha main img {
+  justify-self: flex-start;
+  align-self: center;
+}
+
+/*=======================================End Mechanism=====================*/
+
+/*=======================================Start Pricing=====================*/
+
+.pricing main {
+  max-width: 1200px;
+  width: 90%;
+  padding: 20px 60px 60px;
+  margin: 50px auto 0;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  display: grid;
+  grid-template-columns: 2fr 0.5fr 2fr;
+  grid-gap: 8px;
+}
+
+.pricing .line {
+  width: 0.5px;
+  height: 95%;
+  border-left: 2px solid rgba(255, 255, 255, 0.05);
+  align-self: flex-end;
+  justify-self: start;
+}
+
+.pricing main p {
+  font-size: clamp(15px, 8vw, 20px);
+  padding: 10px 0;
+  line-height: 32px;
+}
+
+.pricing main article {
+  width: 70%;
+}
+
+.pricing ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pricing ul li {
+  display: grid;
+  grid-template-columns: 0.1fr 1.5fr;
+  justify-content: flex-start;
+  align-items: baseline;
+  grid-gap: 5px;
+  font-size: 15px;
+  margin: 2px 0;
+}
+
+.pricing li p {
+  padding: 0;
+  margin: 4px 0;
+  font-size: clamp(12px, 7vw, 17px);
+}
+
+.pricing article button {
+  font-size: clamp(15px, 8vw, 20px);
+  padding: 15px 30px;
+  margin: 20px 0;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background: var(--clr-light);
+  transition: all 0.2s ease;
+}
+
+.pricing article button:hover {
+  background: var(--clr-dark);
+  color: #999;
+}
+
+.pricing article:last-of-type button {
+  background: var(--spl-clr);
+  color: #fff;
+}
+
+.pricing article:last-of-type button:hover {
+  background: #4223bf;
+  color: #fff;
+}
+
+.pricing article:last-of-type h5 {
+  color: #fff;
+}
+
+/*=======================================End Pricing=====================*/
+
+/*=======================================Start Footer=====================*/
+.footer {
+  height: 15vh;
+}
+
+.footer h5 {
+  color: var(--clr-light);
+  text-align: center;
+}
+
+/*=======================================End Footer=====================*/
+
+/*================================Media Query========================================*/
+
+@media (max-width: 900px) {
+  .container {
+    padding: 0 60px;
+  }
+
+  .mecha main {
+    padding: 0 40px;
+    grid-template-columns: 1fr;
+    grid-gap: 12px;
+  }
+
+  .pricing main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 0.5fr 2fr;
+  }
+  .pricing main article {
+    width: 90%;
+  }
+  .pricing .line {
+    height: 0.5px;
+    width: 95%;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .features main {
+    grid-template-columns: 1fr;
+  }
+  header .btn {
+    font-size: 15px;
+    width: 200px;
+    /* padding: 13px; */
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  p {
+    line-height: 22px;
+  }
+
+  .pricing main {
+    padding: 20px 25px;
+    grid-template-rows: 2fr 0.1fr 2fr;
+  }
+}
