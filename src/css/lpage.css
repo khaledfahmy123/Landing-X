@@ -14,6 +14,7 @@ html {
 }
 
 body {
+  background-color: #1b1b22;
   height: 100%;
   padding: 0;
   margin: 0;
@@ -21,8 +22,6 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /* display: flex;
-  flex-direction: column; */
 
   color: var(--clr-light);
   font-family: "Inter", sans-serif;
@@ -104,6 +103,7 @@ header .container {
     "txt" auto
     "btn" auto
     "scroll" auto;
+  grid-gap: 5px;
 }
 
 header h5 {
@@ -130,7 +130,7 @@ header .btn:hover {
 }
 
 .scroll-btn {
-  margin: 20px 0;
+  /* margin: 30px 0; */
   cursor: pointer;
 }
 
