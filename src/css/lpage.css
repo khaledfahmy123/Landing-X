@@ -370,6 +370,7 @@ header span {
   }
 
   header .container {
+    padding-top: 5px;
     grid-template:
       "title" 8vh
       "hyper" 20vh
