@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Landing-X/static/css/main.cbddb9c5.chunk.css",
+    "main.js": "/Landing-X/static/js/main.3053f342.chunk.js",
+    "main.js.map": "/Landing-X/static/js/main.3053f342.chunk.js.map",
+    "runtime-main.js": "/Landing-X/static/js/runtime-main.573da421.js",
+    "runtime-main.js.map": "/Landing-X/static/js/runtime-main.573da421.js.map",
+    "static/js/2.150dc476.chunk.js": "/Landing-X/static/js/2.150dc476.chunk.js",
+    "static/js/2.150dc476.chunk.js.map": "/Landing-X/static/js/2.150dc476.chunk.js.map",
+    "index.html": "/Landing-X/index.html",
+    "static/css/main.cbddb9c5.chunk.css.map": "/Landing-X/static/css/main.cbddb9c5.chunk.css.map",
+    "static/js/2.150dc476.chunk.js.LICENSE.txt": "/Landing-X/static/js/2.150dc476.chunk.js.LICENSE.txt",
+    "static/media/lpage.css": "/Landing-X/static/media/Curve Line.768c225a.svg",
+    "static/media/mechanism.svg": "/Landing-X/static/media/mechanism.3920f7b1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.573da421.js",
+    "static/js/2.150dc476.chunk.js",
+    "static/css/main.cbddb9c5.chunk.css",
+    "static/js/main.3053f342.chunk.js"
+  ]
+}
