@@ -86,7 +86,7 @@ p {
   color: var(--clr-light);
   font-size: clamp(15px, 5vw, 24px);
 
-  line-height: 38px;
+  line-height: 150%;
 }
 
 .btn {
@@ -126,12 +126,12 @@ header {
 header .container {
   display: grid;
   grid-template:
-    "span" 0.5fr
-    "title" 0.2fr
-    "hyper" auto
-    "txt" auto
+    "span" 10vh
+    "title" 10vh
+    "hyper" 15vh
+    "txt" 25vh
     "btn" auto
-    "scroll" auto;
+    "scroll" 10vh;
   grid-gap: 5px;
 }
 
